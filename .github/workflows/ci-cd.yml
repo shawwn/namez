@@ -59,28 +59,33 @@ jobs:
       with:
         fetch-depth: 0
         ref: main
-    # Step 4. Use PSR to make release
+    # Step 4. Install and upgrade poetry
+    - name: Install poetry
+      run: |
+        which poetry && ( curl -sSL https://install.python-poetry.org | python3 - --uninstall )
+        curl -sSL https://install.python-poetry.org | POETRY_PREVIEW=1 python3 -
+    # Step 5. Use PSR to make release
     - name: Python Semantic Release
       run: |
           pip install python-semantic-release
           git config user.name github-actions
           git config user.email github-actions@github.com
           semantic-release publish
-    # Step 5. Publish to TestPyPI
+    # Step 6. Publish to TestPyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
         repository_url: https://test.pypi.org/legacy/
         skip_existing: true
-    # Step 6. Test install from TestPyPI
+    # Step 7. Test install from TestPyPI
     - name: Test install from TestPyPI
       run: |
           pip install \
           --index-url https://test.pypi.org/simple/ \
           --extra-index-url https://pypi.org/simple \
           namez
-    # Step 7. Publish to PyPI
+    # Step 8. Publish to PyPI
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
