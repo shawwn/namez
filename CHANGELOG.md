@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.3 (2022-01-28)
+### Fix
+* **build:** Fix CD build command ([`4987c4b`](https://github.com/shawwn/namez/commit/4987c4bd3002784512eb02be8be96dd66f92648d))
+
 ## v0.1.2 (2022-01-28)
 ### Fix
 * **build:** Get rid of the pre_commit_command for now; Update setup.py ([`2c0a921`](https://github.com/shawwn/namez/commit/2c0a921eb7f34dbf6ca04180bb38292d7b752afa))
