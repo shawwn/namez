@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.5 (2022-01-28)
+### Fix
+* **build:** Try to fix CD build command ([`72b7c28`](https://github.com/shawwn/namez/commit/72b7c283e483834636598f17c26a6e468993d22b))
+
 ## v0.1.4 (2022-01-28)
 ### Fix
 * **build:** Fix CD build command ([`d72406e`](https://github.com/shawwn/namez/commit/d72406edfb81cace7fcbee495171ab7bba02c982))
