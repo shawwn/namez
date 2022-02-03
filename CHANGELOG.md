@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2022-02-03)
+### Feature
+* Initial API ([`b14887d`](https://github.com/shawwn/namez/commit/b14887d692622d812726fd35f993d6d6fe8dee98))
+
 ## v0.1.5 (2022-01-28)
 ### Fix
 * **build:** Try to fix CD build command ([`72b7c28`](https://github.com/shawwn/namez/commit/72b7c283e483834636598f17c26a6e468993d22b))

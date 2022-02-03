@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "namez"
-version = "0.1.5"
+version = "0.2.0"
 homepage = "https://github.com/shawwn/namez"
 description = "A package for accessing objects by name"
 authors = ["Shawn Presser"]
