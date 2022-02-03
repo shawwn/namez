@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
+import re
+import os
+
+version = re.search(r'^version\s*=\s*"(.*?)"', open(os.path.join(os.path.dirname(__file__), 'pyproject.toml')).read(), flags=re.MULTILINE).group(1)
+long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 package_dir = \
 {'': 'src'}
@@ -12,9 +17,9 @@ package_data = \
 
 setup_kwargs = {
     'name': 'namez',
-    'version': '0.1.1',
+    'version': version,
     'description': 'A package for accessing objects by name',
-    'long_description': '# namez\n\nA package for accessing objects by name\n\n## Installation\n\n```bash\n$ pip install namez\n```\n\n## Usage\n\n- TODO\n\n## Contributing\n\nInterested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.\n\n## License\n\n`namez` was created by Shawn Presser. It is licensed under the terms of the MIT license.\n\n## Credits\n\n`namez` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).\n',
+    'long_description': long_description,
     'author': 'Shawn Presser',
     'author_email': 'None',
     'maintainer': 'None',
