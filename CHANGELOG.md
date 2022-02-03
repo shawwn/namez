@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-02-03)
+### Fix
+* Fix setup.py ([`6aee161`](https://github.com/shawwn/namez/commit/6aee161ddcc78adca3187a37ad1c062e339ee460))
+
 ## v0.2.0 (2022-02-03)
 ### Feature
 * Initial API ([`b14887d`](https://github.com/shawwn/namez/commit/b14887d692622d812726fd35f993d6d6fe8dee98))
