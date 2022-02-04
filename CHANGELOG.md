@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-02-04)
+### Feature
+* Add naming.typez API ([`0a75e55`](https://github.com/shawwn/namez/commit/0a75e55ba57346d70479676c00a4b870a044092f))
+
 ## v0.2.1 (2022-02-03)
 ### Fix
 * Fix setup.py ([`6aee161`](https://github.com/shawwn/namez/commit/6aee161ddcc78adca3187a37ad1c062e339ee460))
